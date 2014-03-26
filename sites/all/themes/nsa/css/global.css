@@ -1,0 +1,111 @@
+body{background:#d7e9f0;font-family:'verdana';color:#747a7e}
+h1,h2,h3,h4{font-family:'verdana'}
+h1{font-weight:600;text-transform:uppercase}
+.breadcrumb{margin:5px}
+.calendario{margin-top:30px;}
+.calendario .block-title{color:#004db6;border-bottom:1px solid #004db6}
+.calendario .content{background:url("../images/calendario2.png") no-repeat center bottom transparent;left:-10px;position:relative;top:0;}
+.calendario .content .view-header{height:66px;left:0;padding-left:26px;position:relative;top:0;width:90%;}
+.calendario .content .view-header .date-nav{min-height:50px;padding-top:5px;background:url("../images/linea.png") no-repeat center bottom transparent}
+.calendario .content .view-header .pager{left:0;position:absolute;top:5px;width:100%;border:none;}
+.calendario .content .view-header .pager .date-next,.calendario .content .view-header .pager .date-prev{background:none;border:none}
+.calendario .content .view-header .date-heading h3 a{text-decoration:none}
+.calendario .content .view-content{left:0;padding-left:15px;position:relative;top:-30px;width:90%;}
+.calendario .content .view-content tr,.calendario .content .view-content th,.calendario .content .view-content td,.calendario .content .view-content td.empty{background:none;border:none;color:#fff}
+.calendario .content .view-content th.days{text-align:right}
+.calendario .content .view-content td.sat.mini{color:#ff8200}
+.eventos .block-title{color:#004db6;border-bottom:1px solid #004db6}
+.eventos .content{background:#fff;border-left:8px solid #004db6;padding-left:15px;margin-top:10px;padding-right:40px;}
+.eventos .content .view-content .evento-item{border-bottom:1px dotted #004db6;padding:15px 0 15px 40px;position:relative;}
+.eventos .content .view-content .evento-item .fecha{color:#00b2ff;float:left;font-weight:bold;height:18px;left:0;line-height:1.1em;padding-right:10px;position:absolute;top:10px;}
+.eventos .content .view-content .evento-item .fecha .dia{font-size:18px}
+.eventos .content .view-content .evento-item .title a{text-decoration:none;font-weight:bold;color:#004db6}
+.eventos .content .view-footer a{background:url("../images/bullet-azul_21.png") no-repeat center left transparent;float:right;font-size:10px;padding:5px;text-align:right;width:131px;color:#004db6}
+.field-name-field-image{padding:5px;background:#fff;border:1px solid #ddd;border-radius:5px;margin-bottom:20px}
+.field-name-field-imagenes-lateral{float:right;}
+.field-name-field-imagenes-lateral .field-item{border:1px solid #ddd;padding:5px;background:#fff;border-radius:4px;margin-bottom:10px}
+.field-name-field-imagenes-pie-de-pagina .field-item{display:inline-block;border:1px solid #ddd;padding:5px;background:#fff;border-radius:4px;margin:10px}
+.galeria.big{margin-top:30px;}
+.galeria.big .block-title{color:#004db6;border-bottom:1px solid #004db6;margin-bottom:10px}
+.galeria.big .view-content{position:relative;}
+.galeria.big .view-content .row-big{position:relative;width:415px;}
+.galeria.big .view-content .row-big .imagen.thumb{width:100%;position:relative;top:0;left:40px;width:415px;}
+.galeria.big .view-content .row-big .imagen.thumb .capa{background:none repeat scroll 0 0 rgba(6,1,1,0);height:280px;left:0;position:absolute;top:0;width:415px;transition:all 1s;}
+.galeria.big .view-content .row-big .imagen.thumb .capa:hover{background:none repeat scroll 0 0 rgba(6,1,1,0.67)}
+.galeria.big .view-content .row-big .titulo{left:140px;position:absolute;top:48%;}
+.galeria.big .view-content .row-big .titulo a{font-size:30px;color:#fff;text-decoration:none}
+.galeria.thumb .view-content{left:520px;position:absolute;top:387px;width:415px;}
+.galeria.thumb .view-content .row-thumb{display:inline-block;position:relative;margin:0 20px 10px 0;}
+.galeria.thumb .view-content .row-thumb .imagen .capa{background:none repeat scroll 0 0 rgba(6,1,1,0.72);bottom:0;height:31px;left:0;position:absolute;width:185px}
+.galeria.thumb .view-content .row-thumb .titulo{bottom:7px;left:15px;position:absolute;}
+.galeria.thumb .view-content .row-thumb .titulo a{font-size:12px;color:#fff;text-decoration:none}
+.logged-in .galeria.thumb .view-content{left:500px;position:absolute;top:-279px;width:415px}
+.imagen-interna .cab-item .imagen{overflow:hidden;position:relative;width:940px;height:200px;margin:10px 0;box-shadow:1px 1px 3px #000;}
+.imagen-interna .cab-item .imagen img{position:absolute;top:0;left:0}
+.region-postscript-first-inner{position:relative}
+.menu-interno{margin:30px 0;}
+.menu-interno .menu li{list-style:none;border-bottom:1px dotted #004db6;}
+.menu-interno .menu li a{background:url("../images/bullet-azul_21.png") no-repeat scroll -7px 5px rgba(0,0,0,0);display:block;text-decoration:none;padding:10px 35px;border-radius:5px;}
+.menu-interno .menu li a.active,.menu-interno .menu li a:hover{background:url("../images/bullet-blanquito_17.png") no-repeat scroll -7px 5px #004db6;color:#fff;font-weight:bold}
+.menusf{background:url("../images/menu-fondo.png") repeat-x scroll 0 0 rgba(0,0,0,0);color:#fff;text-transform:uppercase;}
+.menusf .mli ul{padding-top:8px;}
+.menusf .mli ul li.sf-depth-2{background:#2c3b5a}
+.menusf .mli ul .ma{text-transform:capitalize;padding:10px}
+.menusf .ma{color:#fff;font-size:11px;padding:15px 6px;text-decoration:none;}
+.menusf .ma:hover,.menusf .ma.active{text-decoration:underline}
+.noticias .block-title{color:#004db6;border-bottom:1px solid #004db6;margin-bottom:10px}
+.noticias .view-content{padding-left:18px;}
+.noticias .view-content .noticia-item{display:inline-block;width:225px;}
+.noticias .view-content .noticia-item .titulo{padding:10px 0;text-align:center;}
+.noticias .view-content .noticia-item .titulo a{color:#ff8200;font-size:18px;text-decoration:none;font-weight:bold;text-transform:capitalize}
+.noticias .view-content .noticia-item .contenido{line-height:1.4em}
+.noticias .view-content .noticia-item .ver-mas{background:#004db6;border-radius:2px;display:inline-block;padding-left:10px;width:90px;}
+.noticias .view-content .noticia-item .ver-mas a{background:url("../images/bullet-blanquito_17.png") no-repeat scroll -18px -6px rgba(0,0,0,0);color:#fff;padding-left:15px;text-decoration:none}
+.logo div{line-height:.9em}
+.logo .content{padding:17px 0 0 0;color:#747a7e;margin-bottom:20px}
+.logo .image{float:left;margin-right:15px}
+.logo .texta{font-family:'verdana';font-size:20px}
+.logo .textb{font-family:'verdana';font-size:30px}
+#page-title{color:#00b2ff;font-size:25px}
+.page-node-35 .field-name-body{float:right;width:530px;}
+.page-node-35 .field-name-body .dir{background:url("../images/icono-de-ubicacion_26.png") no-repeat scroll 0 2px rgba(0,0,0,0);padding:5px 0 0 35px}
+.page-node-35 .field-name-body .mail{background:url("../images/icono-de-mensaje_30.png") no-repeat scroll 0 2px rgba(0,0,0,0);padding:5px 0 0 35px}
+.page-node-35 .field-name-body .telf{padding:5px 0 15px 35px;background:url("../images/icono-de-telefono_31.png") no-repeat scroll 0 2px rgba(0,0,0,0)}
+.page-node-35 .webform-client-form{width:380px;}
+.page-node-35 .webform-client-form .form-item label{display:inline-block;width:173px}
+.section .form-submit{background:#003d9a;color:#fff;text-shadow:none;height:35px;width:75px;border-radius:0 5px 5px 0;}
+.section .form-submit:hover{background:#003d9a}
+.section .form-text{height:35px;width:201px}
+.slide{margin-top:14px;}
+.slide .slideimage{box-shadow:2px 2px 4px #000}
+.slide .slide-item .content{background:rgba(7,4,4,0.62);height:370px;padding:87px 15px;position:absolute;right:0;text-align:center;top:0;width:300px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.slide .views-slideshow-pager-fields{text-align:center;margin:20px}
+.slide .views-slideshow-pager-field-item{background:url("../images/slide-gris.png") no-repeat center center transparent;width:16px;height:20px;display:inline-block;text-indent:-99999px;}
+.slide .views-slideshow-pager-field-item:hover,.slide .views-slideshow-pager-field-item.active{background:url("../images/slide-azul.png") no-repeat center center transparent}
+.slide .views-slideshow-controls-text{position:absolute;top:182px;left:0;z-index:999;width:100%;}
+.slide .views-slideshow-controls-text span{display:inline-block;width:38px;height:37px;text-indent:-999999px}
+.slide .views-slideshow-controls-text-previous{background:url("../images/icono-flecha_04.png") no-repeat center center transparent;}
+.slide .views-slideshow-controls-text-previous:hover{background-image:url("../images/icono-flechita-blanca_04.png")}
+.slide .views-slideshow-controls-text-next{float:right;background:url("../images/icono-flechita-transparencia_04.png") no-repeat center center transparent;}
+.slide .views-slideshow-controls-text-next:hover{background-image:url("../images/icono-flechita-blanca-2_04.png")}
+.slide .views-slideshow-controls-text-pause{display:none}
+.submenu{margin-top:43px;color:#747a7e}
+#page{background:url("../images/colegio-luchonuevo2_01.png") no-repeat center top transparent}
+.section-footer{border-top:8px solid #004db6;margin-top:40px;}
+.section-footer .zone-footer-wrapper{padding-bottom:30px;background:#4ca9d0;padding-top:20px;color:#fff;}
+.section-footer .zone-footer-wrapper .block-title{color:#004db6;text-transform:uppercase;margin-bottom:10px}
+.section-footer .zone-footer-wrapper .blog-item{background:url("../images/bullet-azul_21.png") no-repeat scroll 0 2px rgba(0,0,0,0);border-bottom:1px dotted #004db6;padding:5px 0 5px 29px;width:74%;}
+.section-footer .zone-footer-wrapper .blog-item .titulo a{color:#fff;text-decoration:none}
+.section-footer .zone-footer-wrapper .recursos .menu li{list-style:none;background:url("../images/bullet-azul_21.png") no-repeat scroll 0 2px rgba(0,0,0,0);border-bottom:1px dotted #004db6;padding:5px 0 5px 29px;width:74%;}
+.section-footer .zone-footer-wrapper .recursos .menu li a{color:#fff;text-decoration:none}
+.section-footer .zone-footer-wrapper .contact .dir{background:url("../images/icono-de-ubicacion_26.png") no-repeat scroll 0 2px rgba(0,0,0,0);padding:5px 0 0 35px}
+.section-footer .zone-footer-wrapper .contact .mail{background:url("../images/icono-de-mensaje_30.png") no-repeat scroll 0 2px rgba(0,0,0,0);padding:5px 0 0 35px}
+.section-footer .zone-footer-wrapper .contact .telf{padding:5px 0 15px 35px;background:url("../images/icono-de-telefono_31.png") no-repeat scroll 0 2px rgba(0,0,0,0)}
+.section-footer .zone-footer-wrapper .contact .content ul{margin:0 40px}
+.section-footer .zone-footer-wrapper .contact .content li{display:inline-block;}
+.section-footer .zone-footer-wrapper .contact .content li a{display:inline-block;height:47px;width:48px;text-indent:-9999px}
+.section-footer .zone-footer-wrapper .contact .content li a.tw{background:url("../images/twitter_27.png") no-repeat scroll 1px -3px rgba(0,0,0,0)}
+.section-footer .zone-footer-wrapper .contact .content li a.fb{background:url("../images/facebook_30.png") no-repeat scroll 1px 2px rgba(0,0,0,0)}
+.section-footer .zone-footer-wrapper .contact .content li a.gm{background:url("../images/google-+_32.png") no-repeat scroll 1px -5px rgba(0,0,0,0)}
+.texto-inicio #Stage{margin:0 auto}
+.zone-user{padding-top:100px}

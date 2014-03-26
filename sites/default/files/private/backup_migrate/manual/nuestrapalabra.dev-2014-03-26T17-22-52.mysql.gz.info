@@ -1,0 +1,8 @@
+filename = "nuestrapalabra.dev-2014-03-26T17-22-52"
+description = ""
+datestamp = "1395872574"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.26"
+sites[0][name] = "nuestrapalabra.dev"
+sites[0][url] = "http://default/"

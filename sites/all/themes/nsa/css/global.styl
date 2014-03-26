@@ -1,0 +1,532 @@
+/*colores*/
+fondo_celeste = #D7E9F0
+fuente = 'verdana'
+color_gris =  #747A7E
+letra_gris = #888E92
+azul_menu = #2C3B5A
+letra_azul = #004DB6
+letra_celeste = #00B2FF
+letra_naranja = #FF8200
+
+
+body
+    background fondo_celeste
+    font-family fuente
+    color color_gris
+
+h1
+h2
+h3
+h4
+    font-family fuente
+
+h1
+    font-weight 600
+    text-transform uppercase    
+
+.breadcrumb 
+    margin: 5px;
+
+
+
+.calendario
+    margin-top 30px
+    .block-title
+        color letra_azul
+        border-bottom 1px solid letra_azul   
+    .content
+        background url("../images/calendario2.png") no-repeat center bottom transparent
+        left: -10px;
+        position: relative;
+        top: 0;
+        .view-header
+            height: 66px;
+            left: 0;
+            padding-left: 26px;
+            position: relative;
+            top: 0;
+            width: 90%;
+            .date-nav
+                min-height: 50px;
+                padding-top: 5px;
+                background url("../images/linea.png") no-repeat center bottom transparent
+            .pager
+                left: 0;
+                position: absolute;
+                top: 5px;
+                width: 100%;
+                border none
+                .date-next
+                .date-prev
+                    background none
+                    border none
+            .date-heading
+                h3
+                    a
+                        text-decoration none
+        .view-content
+            left: 0;
+            padding-left: 15px;
+            position: relative;
+            top: -30px;
+            width: 90%;
+            tr
+            th
+            td
+            td.empty
+                background none
+                border none
+                color #fff  
+            th.days
+                text-align right
+            td
+                &.sat
+                    &.mini
+                        color letra_naranja
+                
+
+
+.eventos
+    .block-title
+        color letra_azul
+        border-bottom 1px solid letra_azul   
+     .content
+        background #fff
+        border-left: 8px solid letra_azul
+        padding-left: 15px;
+        margin-top 10px
+        padding-right: 40px;
+
+        .view-content
+            .evento-item
+                border-bottom: 1px dotted letra_azul
+                padding: 15px 0 15px 40px;
+                position: relative;
+
+                .fecha 
+                    color letra_celeste
+                    float: left;
+                    font-weight: bold;
+                    height: 18px;
+                    left: 0;
+                    line-height: 1.1em;
+                    padding-right: 10px;
+                    position: absolute;
+                    top: 10px;
+                    .dia
+                        font-size 18px
+
+                .title
+                    a
+                        text-decoration none
+                        font-weight bold
+                        color letra_azul
+        .view-footer
+            a
+                background url("../images/bullet-azul_21.png") no-repeat center left transparent
+                float: right;
+                font-size: 10px;
+                padding: 5px;
+                text-align: right;
+                width: 131px;
+                color letra_azul
+
+
+.field-name-field-image 
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+
+
+.field-name-field-imagenes-lateral 
+    float: right;
+    .field-item 
+        border: 1px solid #ddd;
+        padding: 5px;
+        background: #fff;
+        border-radius: 4px;
+        margin-bottom: 10px;
+
+.field-name-field-imagenes-pie-de-pagina
+    .field-item 
+        display inline-block
+        border: 1px solid #ddd;
+        padding: 5px;
+        background: #fff;
+        border-radius: 4px;
+        margin: 10px;
+
+.galeria
+    &.big 
+        margin-top 30px
+        .block-title
+            color letra_azul
+            border-bottom 1px solid letra_azul 
+            margin-bottom 10px
+        .view-content
+            position relative
+            .row-big
+                position relative
+                width: 415px;
+                .imagen.thumb
+                    width 100%
+                    position relative
+                    top: 0;
+                    left: 40px;
+                    width: 415px;
+                    .capa
+                        background: none repeat scroll 0 0 rgba(6, 1, 1, 0);
+                        height: 280px;
+                        left: 0;
+                        position: absolute;
+                        top: 0;
+                        width: 415px;
+                        transition: all 1s;
+                        &:hover
+                             background: none repeat scroll 0 0 rgba(6, 1, 1, 0.67);
+                .titulo
+                    left: 140px;
+                    position: absolute;
+                    top: 48%;
+                    a
+                        font-size 30px
+                        color #fff
+                        text-decoration none
+    &.thumb
+
+        .view-content
+            left: 520px;
+            position: absolute;
+            top: 387px;
+            width: 415px;
+
+            .row-thumb
+                display: inline-block;
+                position relative
+                margin: 0 20px 10px 0;
+                .imagen
+                    .capa
+                        background: none repeat scroll 0 0 rgba(6, 1, 1, 0.72);
+                        bottom: 0;
+                        height: 31px;
+                        left: 0;
+                        position: absolute;
+                        width: 185px;
+                .titulo
+                    bottom: 7px;
+                    left: 15px;
+                    position: absolute;
+                    a
+                        font-size 12px
+                        color #fff
+                        text-decoration none
+
+.logged-in
+    .galeria
+        &.thumb 
+            .view-content 
+                left: 500px;
+                position: absolute;
+                top: -279px;
+                width: 415px;
+
+
+.imagen-interna
+    .cab-item 
+        .imagen
+            overflow: hidden;
+            position: relative;
+            width: 940px;
+            height: 200px;
+            margin: 10px 0;
+            box-shadow: 1px 1px 3px #000;
+            img 
+                position: absolute;
+                top: 0;
+                left: 0;
+
+
+
+.region-postscript-first-inner
+    position relative
+
+
+.menu-interno
+    margin 30px 0
+    .menu
+        li
+            list-style none
+            border-bottom 1px dotted letra_azul
+            a
+                background: url("../images/bullet-azul_21.png") no-repeat scroll -7px 5px rgba(0, 0, 0, 0);
+                display block
+                text-decoration none   
+                padding 10px 35px
+                border-radius 5px
+                &.active
+                &:hover
+                    background url("../images/bullet-blanquito_17.png") no-repeat scroll  -7px 5px letra_azul
+                    color #fff
+                    font-weight bold 
+
+
+.menusf 
+    background: url("../images/menu-fondo.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    text-transform: uppercase
+    
+    .mli
+        ul
+            padding-top 8px
+            li.sf-depth-2
+                background azul_menu
+            .ma
+                text-transform capitalize
+                
+                padding 10px
+
+
+    .ma
+        color: #FFFFFF;
+        font-size: 11px;
+        padding: 15px 6px;
+        text-decoration: none;
+        &:hover
+        &.active
+            text-decoration: underline;
+    
+
+.noticias
+    .block-title
+        color letra_azul
+        border-bottom 1px solid letra_azul   
+        margin-bottom: 10px;
+    .view-content
+        padding-left 18px
+        .noticia-item
+            display inline-block
+            width 225px
+            .titulo
+                padding 10px 0
+                text-align center
+                a
+                    color letra_naranja
+                    font-size 18px
+                    text-decoration none
+                    font-weight bold
+                    text-transform capitalize
+            .contenido
+                line-height: 1.4em
+            .ver-mas
+                background letra_azul
+                border-radius: 2px;
+                display: inline-block;
+                padding-left: 10px;
+                width: 90px;
+                a
+                    background: url("../images/bullet-blanquito_17.png") no-repeat scroll -18px -6px rgba(0, 0, 0, 0);
+                    color: #FFFFFF;
+                    padding-left: 15px
+                    text-decoration: none
+
+
+
+
+.logo 
+    div 
+        line-height: 0.9em
+    .content 
+        padding: 17px 0 0 0
+        color color_gris
+        margin-bottom: 20px;
+    .image 
+        float left
+        margin-right 15px
+    .texta
+        font-family fuente
+        font-size 20px
+    .textb
+        font-family fuente
+        font-size 30px
+
+#page-title
+    color letra_celeste
+    font-size 25px
+
+
+.page-node-35 
+    .field-name-body 
+        float: right;
+        width: 530px;
+        .dir
+            background: url("../images/icono-de-ubicacion_26.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+            padding: 5px 0 0 35px;
+        .mail
+            background: url("../images/icono-de-mensaje_30.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+            padding: 5px 0 0 35px;
+        .telf
+            padding: 5px 0 15px 35px;   
+            background: url("../images/icono-de-telefono_31.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+                    
+
+    .webform-client-form 
+        width: 380px;
+        .form-item
+            label
+                display inline-block
+                width 173px
+            
+
+
+.section
+    .form-submit
+        background: #003D9A;
+        color: #fff;
+        text-shadow: none;
+        height: 35px;
+        width: 75px;
+        border-radius: 0 5px 5px 0;
+        &:hover
+            background: #003D9A;
+
+    .form-text 
+        height: 35px;
+        width: 201px;
+
+.slide 
+    margin-top: 14px;
+    .slideimage
+        box-shadow: 2px 2px 4px #000000;
+    .slide-item 
+        .content 
+            background: rgba(7, 4, 4, 0.62);
+            height: 370px;
+            padding: 87px 15px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            width: 300px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    .views-slideshow-pager-fields 
+        text-align: center;
+        margin: 20px;
+    .views-slideshow-pager-field-item 
+        background url("../images/slide-gris.png") no-repeat center center transparent
+        width: 16px;
+        height: 20px;
+        display: inline-block
+        text-indent: -99999px;
+        &:hover
+        &.active
+            background url("../images/slide-azul.png") no-repeat center center transparent
+    .views-slideshow-controls-text
+        position: absolute;
+        top: 182px;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        span 
+            display: inline-block;
+            width: 38px;
+            height: 37px;
+            text-indent: -999999px;
+
+    .views-slideshow-controls-text-previous
+        background url("../images/icono-flecha_04.png") no-repeat center center transparent
+        &:hover
+            background-image:url("../images/icono-flechita-blanca_04.png")
+    .views-slideshow-controls-text-next
+        float: right;
+        background url("../images/icono-flechita-transparencia_04.png") no-repeat center center transparent
+        &:hover
+            background-image:url("../images/icono-flechita-blanca-2_04.png")
+    .views-slideshow-controls-text-pause
+        display none
+
+
+
+
+        
+.submenu 
+    margin-top 43px
+    color color_gris
+
+
+#page
+    background url('../images/colegio-luchonuevo2_01.png') no-repeat center top transparent
+
+
+.section-footer
+    border-top 8px solid letra_azul
+    margin-top 40px
+    .zone-footer-wrapper
+        padding-bottom 30px
+        background #4CA9D0
+        padding-top 20px
+        color #fff
+        .block-title
+            color letra_azul
+            text-transform uppercase
+            margin-bottom 10px
+        .blog-item
+            background: url("../images/bullet-azul_21.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+            border-bottom: 1px dotted letra_azul
+            padding: 5px 0 5px 29px;
+            width: 74%;
+            .titulo
+                a
+                    color #fff
+                    text-decoration none
+        .recursos
+            .menu
+                li
+                    list-style none
+                    background: url("../images/bullet-azul_21.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+                    border-bottom: 1px dotted letra_azul
+                    padding: 5px 0 5px 29px;
+                    width: 74%;
+                    a
+                        color #fff
+                        text-decoration none
+
+        .contact
+            .dir
+                background: url("../images/icono-de-ubicacion_26.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+                padding: 5px 0 0 35px;
+            .mail
+                background: url("../images/icono-de-mensaje_30.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+                padding: 5px 0 0 35px;
+            .telf
+                padding: 5px 0 15px 35px;   
+                background: url("../images/icono-de-telefono_31.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+            .content
+                ul
+                    margin 0 40px
+                li
+                    display inline-block
+                    a
+                        display: inline-block;
+                        height: 47px;
+                        width: 48px;
+                        text-indent: -9999px;
+                    a.tw
+                        background: url("../images/twitter_27.png") no-repeat scroll 1px -3px rgba(0, 0, 0, 0);
+                    a.fb
+                        background: url("../images/facebook_30.png") no-repeat scroll 1px 2px rgba(0, 0, 0, 0);
+                    a.gm
+                        background: url("../images/google-+_32.png") no-repeat scroll 1px -5px rgba(0, 0, 0, 0);
+
+.texto-inicio 
+    #Stage 
+        margin: 0 auto;
+
+
+
+.zone-user 
+    padding-top 100px
