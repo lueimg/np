@@ -1,6 +1,16 @@
 #page .container-12,#page .container-16,#page .container-24,#page .container-32{width:1000px}
 #page .container-32 .grid-1,#page .container-32 .grid-2,#page .container-32 .grid-3,#page .container-32 .grid-4,#page .container-32 .grid-5,#page .container-32 .grid-6,#page .container-32 .grid-7,#page .container-32 .grid-8,#page .container-32 .grid-9,#page .container-32 .grid-10,#page .container-32 .grid-11,#page .container-32 .grid-12,#page .container-32 .grid-13,#page .container-32 .grid-14,#page .container-32 .grid-15,#page .container-32 .grid-16,#page .container-32 .grid-17,#page .container-32 .grid-18,#page .container-32 .grid-19,#page .container-32 .grid-20,#page .container-32 .grid-21,#page .container-32 .grid-22,#page .container-32 .grid-23,#page .container-32 .grid-24,#page .container-32 .grid-25,#page .container-32 .grid-26,#page .container-32 .grid-27,#page .container-32 .grid-28,#page .container-32 .grid-29,#page .container-32 .grid-30,#page .container-32 .grid-31,#page .container-32 .grid-32{margin-left:10px;margin-right:10px}
-body{background:#e2e7e1;font-size:16px}
+body{background:#e2e7e1;font-size:14px;color:#555}
+.participa .block-title,.bases .block-title{color:#1477df;text-transform:uppercase}
+.participa .titulo a,.bases .titulo a{color:#000;text-transform:uppercase;text-decoration:none;font-weight:bold}
+.participa .ver-mas,.bases .ver-mas{float:right}
+.participa{padding-top:25px}
+.fechas-importantes .block-title{color:#000;text-transform:uppercase;text-decoration:none;font-weight:bold}
+.ganadores .ganadores-item{overflow:auto;}
+.ganadores .ganadores-item .imagen{float:left;padding:0 10px 10px}
+.ganadores .ganadores-item .edicion{color:#555;font-weight:bold}
+.ganadores .ganadores-item .cuento{color:#555}
+.ganadores .ganadores-item .ver-mas{float:right;color:#1477df}
 .logo-auspiciador{font-size:.7em;font-weight:bold;line-height:7em;padding-left:6.5em;vertical-align:middle;}
 .logo-auspiciador p{overflow:auto}
 .logo-auspiciador span{color:#a5a5a5}
@@ -12,8 +22,11 @@ body{background:#e2e7e1;font-size:16px}
 .noticias .noticia-item{display:inline-block;width:310px;position:relative;font-size:.7em;}
 .noticias .noticia-item .group-left{width:auto;margin-right:10px}
 .noticias .noticia-item .group-right{width:200px}
-.noticias .noticia-item p{margin:0}
-.noticias .noticia-item h2{font-size:1.5em;margin-bottom:0}
+.noticias .noticia-item p{margin:0;color:#555}
+.noticias .noticia-item h2{font-size:1.4em;margin-bottom:0;}
+.noticias .noticia-item h2 a{color:#000;text-decoration:none}
+.noticias .noticia-item .field-name-node-link{float:right;}
+.noticias .noticia-item .field-name-node-link a{color:#1477df;text-decoration:none}
 .noticias .noticia-item.views-row-first{margin-right:10px;width:320px;float:left;}
 .noticias .noticia-item.views-row-first .group-right{background:rgba(0,0,0,0.62);position:absolute;bottom:0;left:0;padding:10px;position:absolute;width:300px;}
 .noticias .noticia-item.views-row-first .group-right h2 a{color:#fff;text-decoration:none}
@@ -22,3 +35,4 @@ body{background:#e2e7e1;font-size:16px}
 .zone{background:#fff}
 .zone-menu{background:url("../images/menu-bg.jpg") repeat-x 0 0 transparent}
 .zone-user{padding-top:2em}
+.zone-preface{background:#ecf1f7}

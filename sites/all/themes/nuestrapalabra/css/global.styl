@@ -1,5 +1,6 @@
 color_plomo_bg = #E2E7E1
 color_plomo_letra = #A5A5A5
+color_plomo_2 = #555
 color_plomo_bloque = #ECF1F7
 color_plomo_menu = #637A9A
 color_azul_titulo = #1477DF
@@ -50,7 +51,48 @@ color_azul_titulo = #1477DF
 
 body
 	background color_plomo_bg
-	font-size 16px
+	font-size 14px
+	color color_plomo_2
+
+.participa
+.bases
+	.block-title
+		color color_azul_titulo
+		text-transform uppercase
+	.titulo
+		a
+			color #000
+			text-transform uppercase
+			text-decoration none
+			font-weight bold
+	.ver-mas
+		float right
+
+.participa
+	padding-top 25px
+.fechas-importantes
+	.block-title
+		color #000
+		text-transform uppercase
+		text-decoration none
+		font-weight bold
+
+
+.ganadores
+	.ganadores-item
+		overflow: auto;
+		.imagen 
+			float left
+			padding: 0 10px 10px
+		.edicion
+			color color_plomo_2
+			font-weight bold
+		.cuento
+			color color_plomo_2
+		.ver-mas
+			float right
+			color color_azul_titulo
+
 
 
 .logo-auspiciador
@@ -102,9 +144,19 @@ body
 			width 200px
 		p
 			margin 0
+			color color_plomo_2
 		h2
-			font-size 1.5em
+			font-size 1.4em
 			margin-bottom 0
+			a
+				color #000
+				text-decoration none
+		.field-name-node-link
+			float right
+			a
+				color color_azul_titulo
+				text-decoration none
+
 		&.views-row-first
 			margin-right 10px
 			width: 320px;
@@ -135,3 +187,6 @@ body
 	background url('../images/menu-bg.jpg') repeat-x 0 0 transparent
 .zone-user
 	padding-top 2em  
+
+.zone-preface
+	background color_plomo_bloque
