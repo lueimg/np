@@ -215,7 +215,7 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'np',
+      'database' => 'nuestrapalabra',
       'username' => 'root',
       'password' => '123',
       'host' => 'localhost',
