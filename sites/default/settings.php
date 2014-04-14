@@ -215,10 +215,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'nuestrapalabra',
+      'database' => 'np',
       'username' => 'root',
-      'password' => '123',
-      'host' => 'localhost',
+      'password' => '',
+      'host' => '127.0.0.1',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
@@ -256,7 +256,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'p1f5l4Chglm24odfWuWFKpfCBwDDm-3-UXq5tGpHx8A';
+$drupal_hash_salt = 'nKm0JTogkOMObZJqURQRp6K_vVldo3O747pg_fJ7vwA';
 
 /**
  * Base URL (optional).
