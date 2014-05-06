@@ -10,3 +10,9 @@
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
+
+function nuestrapalabra_preprocess_taxonomy_term(&$var){
+// drupal_set_message(t("hola"), 'status', FALSE);
+// dsm($var);
+// $var["content"] = array();
+}
