@@ -2,10 +2,112 @@
 
 function empty_front_page_menu_alter(&$items) {
   $items['node']['page callback'] = 'empty_front_page_callback';
-  dsm($items);
+  // dsm($items);
 }
 
 function empty_front_page_callback() {
   drupal_set_title('');
   return array();
 }
+
+/* funciones extras*/
+function edicion_actual(){
+
+$sql = "select field_edicion_actual_value value from field_data_field_edicion_actual limit 1";
+$rs = db_query($sql);
+$row = $rs->fetchObject();
+
+return $row->value;
+
+
+}
+
+function pertenece_a_edicion_actual($nid){
+
+$node = node_load($nid);
+$tidactual = edicion_actual();
+if($node->field_edicion['und'][0]['tid'] == $tidactual)
+	return true;
+else
+	return false;
+}
+
+
+function term_ediciones_anteriores(){
+	$sql="SELECT * FROM taxonomy_term_data td
+where vid = 2
+and tid not in (select field_edicion_actual_value value from field_data_field_edicion_actual )
+order by td.name desc";
+$rs = db_query($sql);
+$terms = $rs->fetchAll();
+
+return $terms;
+
+
+}
+
+
+function empty_front_page_menu() {
+
+  $items['ediciones-anteriores'] = array(
+    'title' => 'Example RSS feed',
+    'page callback' => 'page_ediciones_anteriores',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+
+function page_ediciones_anteriores(){
+drupal_set_title('');
+
+// RECONOCE QUE EDICION MOSTRAR
+$terms = term_ediciones_anteriores();
+$opts = "";
+foreach ($terms as $row) {
+	$opts .= "<option value=\"/ediciones-anteriores/".$row->tid."\">". $row->name ."</option>";
+}
+
+$select= '
+<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    <option value="">-- Ediciones Anteriores --</option>
+   '.$opts.'
+</select>
+';
+// dsm($terms);
+$tid = arg(1);
+if(empty($tid))
+ $tid = $terms[0]->tid;
+
+$tax = taxonomy_term_load($tid);
+// dsm($tax);
+
+$html = '<div class="cabecera">
+<h1>'.$tax->name.'</h1>
+'.$select.'
+</div>';
+$html .= '<div class="content">'. $tax->description.'</div>';
+
+
+return $html;
+
+}
+
+function page_edicion_a_mostrar(){
+$terms = term_ediciones_anteriores();
+$tid = arg(1);
+if(empty($tid) || !is_numeric($tid))
+ $tid = $terms[0]->tid;
+
+return $tid;
+
+}
+
+
+
+
+
+
+
