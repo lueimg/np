@@ -83,6 +83,7 @@ h6
 	font-family opensansl
 	color titulo_celeste
 	text-transform uppercase
+	margin-bottom 5px
 
 
 body
@@ -163,7 +164,7 @@ p
 		color texto_plomo
 		.imagen 
 			float left
-			padding: 0 10px 10px
+			padding: 0 10px 10px 0 
 		.titulo
 			color #000
 			font-weight: bold;
@@ -180,6 +181,23 @@ p
 				background url("../images/arrow-bullet.png") no-repeat  0 8px transparent;
 
 
+
+.field-name-field-tags
+	.field-items
+		display inline-block
+	.field-label
+		font-weight: bold
+		display inline-block
+	.field-item
+		display inline-block
+		a
+			background #DDE2E8
+			margin-right 10px
+			color #222
+			text-decoration none
+			border-radius 5px
+			padding 2px 5px
+			font-weight: bold
 
 .logo-auspiciador
 	p
@@ -217,6 +235,39 @@ p
 				background url('../images/menu-inicio.jpg') no-repeat 0 0 transparent
 				text-indent -99999em
 
+.node-type-ganador
+.node-type-cuento
+	.field-name-field-puesto
+	.field-name-field-edicion
+	.field-name-field-autor
+	.field-name-field-cuento
+		margin-bottom 15px
+
+
+.node-type-ganador
+	.field-name-field-image
+		float left
+		margin 0 20px 20px 0
+	.field-name-body
+		clear both
+
+
+.node-type-webform
+	#edit-submit
+		background linear-gradient(top,  #4694E7, #1477DF);
+		padding .1em 1.5em
+		color #fff
+		text-decoration none
+		text-transform uppercase
+		border-radius 5px
+		// float right
+		box-shadow 1px 1px 1px #222
+		font-family: opensansb
+		font-weight: 200
+		font-size: 1em
+		margin 10px 0
+		text-shadow none
+		
 
 
 .noticias-sidebar
@@ -441,7 +492,45 @@ p
 
 
 
-
+.tags
+	#block-system-main
+		.content
+			padding 3px 10px
+			background #F3F3F3
+			overflow hidden
+			.node-article
+				flow hidden
+				background #fff
+				padding 5px
+				margin-top 10px
+				box-sha
+			.group-left
+				width: auto
+				margin-right 10px
+			.group-right
+				width: auto
+				.field-name-title
+					h2
+						line-height 0.5em
+					a
+						color #222
+						font-family opensansl
+						font-weight: 200
+						font-size: 1rem
+						letter-spacing 0.02em
+						text-transform capitalize
+				.field-name-node-link
+					display none
+					a
+						background url("../images/arrow-bullet.png") no-repeat  0 5px transparent;
+						padding-left 1em
+						text-decoration none
+						color azul
+						font-size: .9em
+						font-weight bold
+						float right
+				
+			
 
 
 
@@ -536,6 +625,9 @@ p
 .zone-header {
     padding-top: 10px;
 }
+
+.zone-content
+	padding-top 10px
 
 .zone-menu
 	background url('../images/menu-bg.jpg') repeat-x 0 0 transparent
