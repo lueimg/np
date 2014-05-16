@@ -6,7 +6,8 @@ color_plomo_2 = #555
 color_plomo_bloque = #ECF1F7
 color_plomo_menu = #637A9A
 color_azul_titulo = #1477DF
-
+plomo  = #a1a1a1
+azul = #1578E0
 
 
 #page
@@ -93,6 +94,9 @@ body
 
 h2.block-title
 	font-size 23px
+	font-family: opensansb
+	letter-spacing 0.02em
+	font-weight: 200
 
 
 p
@@ -115,12 +119,18 @@ p
 	.auspi-item
 		display inline-block
 
+
+.block.logo
+	padding-left 2em
+
+
 .cuentos
 	background url("../images/bg-home-edicionesanteriores.jpg")  0 0 transparent
 	padding: 15px 20px;
 	margin-top: 10px;
 	.block-title
 		color titulo_marron
+		margin-bottom .5em
 	.cuento-item
 		width 30%
 		display inline-block
@@ -132,9 +142,12 @@ p
 		.ver-mas
 			float right
 			a
+				padding-left .6em
+				background url("../images/arrow-bullet.png") no-repeat  0 8px transparent;
 				color #000
 				text-decoration none
 		.autor
+			color #444
 			.nombre
 				color #444444
 				font-family opensansb
@@ -158,18 +171,26 @@ p
 			font-weight bold
 		.ver-mas
 			float right
-			color text_link
+			a
+				color azul
+				font-size: .9em
+				font-weight: bold
+				text-decoration none
+				padding-left 1em
+				background url("../images/arrow-bullet.png") no-repeat  0 8px transparent;
 
 
 
 .logo-auspiciador
 	p
 		font-weight: bold;
-		line-height: 4em;
+		line-height: 6em;
 		overflow: auto;
-		padding-left: 5em;
-		span
-			font-size: 0.9em;
+		padding-left: 7em;
+		font-family opensansb
+		font-size: .8em;
+		color plomo
+		font-weight bold
 		
 	img
 		float right
@@ -186,6 +207,7 @@ p
 			text-transform uppercase
 			font-size 1em
 			font-family opensansb
+			text-decoration none
 			&.active
 				color menu_activo
 		&.first
@@ -196,6 +218,32 @@ p
 				text-indent -99999em
 
 
+
+.noticias-sidebar
+	.noticia-item
+		overflow hidden
+		margin-bottom 10px
+		.imagen
+			float left 
+			padding-right 10px 
+		.titulo
+			a
+				text-decoration none
+				color #000
+				font-weight: bold
+
+		.ver-mas
+			a
+				color color_azul_titulo
+				text-decoration none
+				background url("../images/arrow-bullet.png") no-repeat  0 5px transparent;
+				padding-left 1em
+				font-weight: bold
+				float right
+				font-size: .9em
+		p
+			margin-bottom 0
+
 .noticias
 	background color_plomo_bloque
 	font-size 1.2em
@@ -203,6 +251,8 @@ p
 	color texto_plomo
 	.block-title
 		padding-left 10px
+		font-family: opensansb
+		font-weight: 200
 
 	.content
 		padding-left 10px
@@ -222,6 +272,7 @@ p
 		h2
 			font-size 1em
 			margin-bottom 0
+			letter-spacing 0.02em
 			a
 				color #000
 				text-decoration none
@@ -230,6 +281,9 @@ p
 			a
 				color color_azul_titulo
 				text-decoration none
+				background url("../images/arrow-bullet.png") no-repeat  0 5px transparent;
+				padding-left 1em
+				font-weight: bold
 
 		&.views-row-first
 			margin-right 10px
@@ -249,7 +303,8 @@ p
 						text-decoration none
 						text-transform none
 						font-size 1.2em
-						letter-spacing: 0.01em;
+						letter-spacing: 0.02em;
+
 	
 
 .participa
@@ -259,12 +314,21 @@ p
 		text-transform uppercase
 	.titulo
 		a
-			color #000 
+			color #393939 
 			text-transform uppercase
 			text-decoration none
 			font-weight bold
+			font-family: opensansb
 	.ver-mas
 		text-align right
+		a
+			background url("../images/arrow-bullet.png") no-repeat  0 5px transparent;
+			padding-left 1em
+			text-decoration none
+			color azul
+			font-size: .9em
+			font-weight bold
+
 
 .participa
 	padding-top 30px
@@ -282,6 +346,104 @@ p
 		font-size 1em
 	.content
 		margin-top 10px
+	strong
+		color #111
+		font-weight: 200
+		font-family: opensansb
+
+
+
+.page-ediciones-anteriores
+	h1
+		background #E7E7E7
+		color #333
+		font-family  opensansb
+		letter-spacing 0.02em
+		position relative
+		left -10px
+		padding-left 10px
+		margin-top 2px
+		font-size: 2.2em
+	.cabecera
+		position relative
+		select
+			position absolute
+			right 30px
+			top 13px
+	.edicion-fotos
+		.imagenes
+			li
+				display inline-block
+				margin 0 18px 0 0
+				&.last
+					margin 0
+			img
+				width 135px
+				height 135px
+		.meta-wrapper
+			display none
+		.media-gallery-item
+			border 1px solid #444
+			padding 2px
+
+.page-edicion-actual
+	.view-content
+		h1
+			background #E7E7E7
+			color #333
+			font-family  opensansb
+			letter-spacing 0.02em
+			position relative
+			left -10px
+			padding-left 10px
+			margin-top 2px
+			font-size: 2.2em
+	.bases
+		/ .vermas2
+		/ .more-link
+		.ver-mas
+			a
+				background linear-gradient(top,  #4694E7, #1477DF);
+				padding .1em 1.5em
+				color #fff
+				text-decoration none
+				text-transform uppercase
+				border-radius 5px
+				float right
+				box-shadow 1px 1px 1px #222
+				font-family: opensansb
+				font-weight: 200
+				font-size: 1em
+				margin 10px 0
+	#region-content
+		.block-title
+			font-family: opensansl
+.listado			
+.jurado-actual
+	padding 3px 10px
+	background #F3F3F3
+	overflow hidden
+	.listado-item
+	.jurado-item
+		overflow hidden
+		background #fff
+		padding 5px
+		margin-top 10px
+		box-shadow 1px 1px 1px #ccc
+		.imagen
+			float left
+			margin-right 10px
+		.titulo
+			color #222
+			font-family opensansb
+			font-weight: 200
+	
+
+
+
+
+
+
 
 #region-menu
 	margin 0
@@ -320,6 +482,9 @@ p
 	
 	.siguenos
 		padding 0 50px
+		h2
+			text-transform uppercase
+			font-size 1em
 		.content
 			ul
 				li
@@ -336,11 +501,17 @@ p
 		.menu
 			li
 				list-style none
+				&:nth-child(2)
+				&:nth-child(3)
+					a
+						color #444
+						font-family opensansl
 				a
 					color titulo_celeste
 					text-decoration none
 					font-family opensansb
 					text-transform uppercase
+					
 	.newsletter
 		width 320px
 		margin 0 30px 50px
@@ -353,7 +524,8 @@ p
 				width 84px
 				height 30px
 				border-radius 0
-				background #1477DF
+				background linear-gradient(bottom right, 50% #4694E7,50% #1477DF);
+
 				text-shadow none
 				color #fff
 
