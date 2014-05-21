@@ -10,6 +10,42 @@ plomo  = #a1a1a1
 azul = #1578E0
 
 
+@font-face {
+	font-family: 'icomoon';
+	src:url(icomoon/fonts/icomoon.eot?-gi9yq2);
+	src:url(icomoon/fonts/icomoon.eot?#iefix-gi9yq2) format('embedded-opentype'),
+		url(icomoon/fonts/icomoon.woff?-gi9yq2) format('woff'),
+		url(icomoon/fonts/icomoon.ttf?-gi9yq2) format('truetype'),
+		url(icomoon/fonts/icomoon.svg?-gi9yq2#icomoon) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e600";
+}
+.icon-twitter:before {
+	content: "\e601";
+}
+.icon-youtube:before {
+	content: "\e602";
+}
+
+
 #page
 	.container-12
 	.container-16
@@ -200,6 +236,7 @@ p
 			font-weight: bold
 
 .logo-auspiciador
+	position relative
 	p
 		font-weight: bold;
 		line-height: 6em;
@@ -209,9 +246,10 @@ p
 		font-size: .8em;
 		color plomo
 		font-weight bold
-		
 	img
-		float right
+		position absolute
+		right 0
+		top 0
 
 #main-menu
 	li
@@ -469,6 +507,9 @@ p
 	#region-content
 		.block-title
 			font-family: opensansl
+
+.page-taxonomy-term-8 .region-content .content
+.page-taxonomy-term-9 .region-content .content
 .listado			
 .jurado-actual
 	padding 3px 10px
@@ -481,6 +522,7 @@ p
 		padding 5px
 		margin-top 10px
 		box-shadow 1px 1px 1px #ccc
+		.field-name-field-image
 		.imagen
 			float left
 			margin-right 10px
@@ -554,7 +596,7 @@ p
 #region-footer-first
 #region-postscript-first 
 	margin: 0;
-	width: auto;
+	width: 100%;
 
 #region-footer-second
 	background #BED0E4
@@ -580,8 +622,13 @@ p
 					list-style none
 					display inline-block
 					a
-						color titulo_celeste
+						color #fff
 						text-decoration none
+						display inline-block
+						margin 10px
+						font-size: 2em
+						&:hover
+							color color_azul_titulo
 	.mf
 		padding 20px 50px
 		text-align center
