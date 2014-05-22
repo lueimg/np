@@ -1,7 +1,12 @@
-Edicion Actual:
-  ✔ Creacion de view edicion-actual @done (14-05-06 02:08)
-  ✔ Creacion de bloques relacionados al terminio actual @done (14-05-16 01:38)
-  ✔ Crear bloque jurado @done (14-05-16 01:38)
-  ✔ crear bloque comunicados @done (14-05-16 01:38)
-  ✔ Auspiciadores @done (14-05-16 01:38)
-Ediciones anteriores:
+Cuentos:
+  ☐ bloque de ediciones seleccion
+  ☐ Listado dependiente de Edicion
+Ganadores:
+  ☐ Agrupados por ganador
+
+
+
+
+    Hecho:
+      ☐ se creo view
+      ☐ se actualizo css
