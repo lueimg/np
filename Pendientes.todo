@@ -1,12 +1,7 @@
-Cuentos:
-  ☐ bloque de ediciones seleccion
-  ☐ Listado dependiente de Edicion
 Ganadores:
-  ☐ Agrupados por ganador
+ ☐ Creacion de ganador campo multiple  , edicion , cuento , puesto
+ ☐ FUll page gandor  , cambiar
+ ☐ Listado de ganadores , agrupado por anio
+ ☐ Bloque ellos ganaron
 
 
-
-
-    Hecho:
-      ☐ se creo view
-      ☐ se actualizo css
