@@ -95,20 +95,23 @@ menu_activo = #ffffff
 menu_inactivo = #5d7193
 titulo_celeste = #1376de
 titulo_marron = #7c4d11
-texto_plomo =  #767676
+//texto_plomo =  #767676
+texto_plomo =  #333
 text_link = #1376de
 
 @font-face
 	font-family: opensansb;
 	src: url(fonts/OpenSans-CondBold.ttf);
 
-@font-face
-	font-family: opensansl;
-	src: url(fonts/OpenSans-CondLight.ttf);
+// @font-face
+// 	font-family: opensansl;
+// 	src: url(fonts/OpenSans-CondLight.ttf);
 
 @font-face
 	font-family: opensansli;
 	src: url(fonts/OpenSans-CondLightItalic.ttf);	
+
+opensansl = 'Open Sans'
 
 h1
 h2
@@ -126,7 +129,8 @@ body
 	background color_plomo_bg
 	font-size 16px
 	color texto_plomo
-	font-family opensansl 
+	font-family 'Open Sans'
+	//font-family opensansl 
 
 
 h2.block-title
@@ -137,7 +141,8 @@ h2.block-title
 
 
 p
-	font-size 1em
+	font-size 0.9em
+	//font-size 1em
 
 .auspi-logos
 	text-align center
@@ -153,9 +158,14 @@ p
 		display: inline-block;
 		background #fff
 		padding: 0 10px;
+	.view-content
+		text-align left
+		margin-left: 40px;
 	.auspi-item
 		display inline-block
 
+.banner
+	margin  10px 0
 
 .block.logo
 	padding-left 2em
@@ -181,9 +191,10 @@ p
 			float right
 			a
 				padding-left .6em
-				background url("../images/arrow-bullet.png") no-repeat  0 8px transparent;
+				background url("../images/arrow-bullet.png") no-repeat  0 4px transparent;
 				color #000
 				text-decoration none
+				font-size 0.8em
 		.autor
 			color #444
 			.nombre
@@ -199,6 +210,7 @@ p
 	.ganadores-item
 		overflow: auto;
 		color texto_plomo
+		font-size 0.8em
 		.imagen 
 			float left
 			padding: 0 10px 10px 0 
@@ -215,9 +227,11 @@ p
 				font-weight: bold
 				text-decoration none
 				padding-left 1em
-				background url("../images/arrow-bullet.png") no-repeat  0 8px transparent;
+				background url("../images/arrow-bullet.png") no-repeat  0 5px transparent;
 
-
+.node-type-article
+	.field-name-field-image
+		margin 15px 0	
 
 .field-name-field-tags
 	.field-items
@@ -274,6 +288,11 @@ p
 				background url('../images/menu-inicio.jpg') no-repeat 0 0 transparent
 				text-indent -99999em
 
+.media-gallery-detail
+	max-width 100%
+
+
+
 .node-type-ganador
 .node-type-cuento
 	.field-name-field-puesto
@@ -322,9 +341,10 @@ p
 				padding-left 1em
 				font-weight: bold
 				float right
-				font-size: .9em
+				font-size: .7em
 		p
 			margin-bottom 0
+			font-size: .8em
 
 .noticias
 	background color_plomo_bloque
@@ -343,7 +363,7 @@ p
 		display inline-block
 		width 310px
 		position relative
-		font-size .7em
+		font-size 0.7em
 		.group-left
 			width auto
 			margin-right 10px
@@ -354,7 +374,7 @@ p
 		h2
 			font-size 1em
 			margin-bottom 0
-			letter-spacing 0.02em
+			//letter-spacing 0.02em
 			a
 				color #000
 				text-decoration none
@@ -363,9 +383,10 @@ p
 			a
 				color color_azul_titulo
 				text-decoration none
-				background url("../images/arrow-bullet.png") no-repeat  0 5px transparent;
+				background url("../images/arrow-bullet.png") no-repeat  0 3px transparent;
 				padding-left 1em
 				font-weight: bold
+				font-size 0.8em
 
 		&.views-row-first
 			margin-right 10px
@@ -386,6 +407,8 @@ p
 						text-transform none
 						font-size 1.2em
 						letter-spacing: 0.02em;
+				p
+					color #fff
 
 	
 
